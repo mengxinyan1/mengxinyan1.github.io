@@ -1,49 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Meng's webpage</title>
-  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
-  <style>
-    /* 样式 */
-    body {
-      font-family: Arial, sans-serif;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .student {
-      margin-bottom: 20px;
-      padding: 20px;
-      background-color: #f5f5f5;
-      border-radius: 5px;
-    }
-    .student img {
-      max-width: 200px;
-      max-height: 200px;
-      margin-bottom: 10px;
-    }
-  </style>
+<meta charset="utf-8">
+<title>The Game</title>
 </head>
-<body>
-  <div class="container">
-    <h1 class="text-center mb-5">同学回忆录</h1>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="student">
-          <img src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.0-beta1/img/bootstrap-icons.svg" alt="学生头像">
-          <h3>学生姓名</h3>
-          <p>学生班级</p>
-          <p>学生回忆录</p>
-        </div>
-      </div>
-      <!-- 其他学生信息 -->
-    </div>
-  </div>
+	<body>
+		<div>
+			<div id="player1">
+				<span id="player1name">player1</span>
+				:
+				<input type="text" id="player1NameInput">
+				<button id="confirmButton" onclick="playerInfoChange('player1','name','player1NameInput')">确认</button>
+				(改名字)
 
-  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
-</body>
+				<br>
+				num1:
+				<span id="player1num1">0</span>
+				<input type="text" id="player1Num1Input">
+				<button id="confirmButton" onclick="playerInfoChange('player1','num1','player1Num1Input')">确认</button>
+				<br>
+				num2:
+				<span id="player1num2">0</span>
+				<input type="text" id="player1Num2Input">
+				<button id="confirmButton" onclick="playerInfoChange('player1','num2','player1Num2Input')">确认</button>
+				<br>
+				num3:
+				<span id="player1num3">0</span>
+				<input type="text" id="player1Num3Input">
+				<button id="confirmButton" onclick="playerInfoChange('player1','num3','player1Num3Input')">确认</button>
+			</div>
+		</div>
+	</body>
+	<script src="./js.js"></script>
 </html>
